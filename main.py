@@ -2,4 +2,4 @@
 
 import ui.menu
 
-ui.menu.menu()
+ui.menu.select()
