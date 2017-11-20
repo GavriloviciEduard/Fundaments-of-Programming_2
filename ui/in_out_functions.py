@@ -9,10 +9,11 @@ def read_repo():
     """
     
     repo=[]
+    n=0
     
-    
-    print("Give the number of vectors you want to be read=>")
-    n=read_scalar()
+    while not(n) or n<0 :
+        print("Give the number of vectors you want to be read=>")
+        n=read_scalar()
     
     while n:
         repo.append(read_vector())
@@ -36,7 +37,7 @@ def read_vector():
 
     while True:
         try:
-            while not(n):
+            while not(n) or n< 0 :
                 n=int(input("Give the number of elements of the vector:"))
             break
         except ValueError :
